@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mainselectors with internalCSS</title>
+	<style type>
+		body
+		{
+			background-color: burlywood;
+		}
+		*
+		{
+			font-display: revert-layer;
+		}
+		input
+		{
+			background-color: whitesmoke;
+			border: 2pxl solid;
+			margin: 5px;
+			background-color: seashell;
+			padding: 10px;
+		}
+		
+		.regbutton
+		{
+			padding:6px;
+			padding-left: 4px;
+			padding-right: 4px;
+			color: white;
+			background-color: blue;
+		}
+
+		#signin
+		{
+			padding:6px;
+			padding-left: 4px;
+			padding-right: 4px;
+			color: white;
+			background-color: green;
+		}
+		header{
+			background-color: lightgray;
+		}
+		
+		article,aside,p
+		{
+			margin: 2px;
+			background-color:lightcyan ;
+			text-align: center;
+		}
+		 li
+		 {
+
+		 	border:1px solid gray;
+		 	padding:15px ;
+		 	margin:5px ;
+		 	background-color: lightpink;
+		 }
+		 ul>li
+		 {
+		 	background-color: gray;
+		 	list-style: none;
+		 }
+		 ul li
+		 {
+		 	color: darkblue;
+
+		 }
+		 h3~P
+		 {
+		 	background-color: lightcyan;
+		 	border:1px solid black ;
+		 	color: white;
+		 	color: black;
+		 	padding:10px ;
+		 	border-radius:10px ;
+		 }
+		 h3+span
+		 {
+		 		border:1px solid gray;
+		 	padding:15px ;
+		 	margin:5px ;
+		 	
+		 		background-color: lightgreen;
+		 		border: ;
+		 }
+		 li:nth-child(3)
+		 {
+		 	background-color: black;
+		 }
+		 li:hover
+		 {
+		 	background-color: lightsalmon;
+		 }
+		 h3::first-letter
+		 {
+		 	font-size: 40px;
+		 	color: darkviolet;
+		 }
+		 li::after
+		 {
+		 	content: "       ***Pseudo element***";
+		 	color: whitesmoke;
+		 }
+
+	</style>
+</head>
+<body>
+<header>
+<center>
+	<h1>
+	SELECTORS
+	</h1>
+<form>
+	<h4>Create an account if you are a new candidate.</h4>
+	<input type="text"name="firstname"required placeholder="username"><br>
+	<input type="text"name="lastname"required placeholder="email"><br>
+	<input type="password"name="password"required placeholder="enter password"><br>
+	<input class="regbutton"type="button" name="sumbit"value="Register">
+	<h6>Are you a student of Avinuty</h6>
+	<input id="signin"type="submit" name="submit"value="SIGN IN"><br>
+</form><br>
+	</center>
+</header>
+<article>
+	Avinashilingam Institute for Home Science and Higher Education for Women, popularly known as Avinshiligam University is a woman deemed to be University in Coimbatore. With a 91-92% placement rate, the university has recently placed 821 women students in companies like Ernst & Young, Cognizant, Maveric, TNQ, Ford, Wipro, Dell, Reliance Communications, Canara Bank, Bosch, CSS, iGATE, Renault Nissan, 2adpro, ugam, Standard Chartered, etc.
+</article>
+<aside>
+	<b>Placement Experience :</b> At our university, there is a good placement cell. Students are also getting job offers from HCL, WIPRO, etc, But only a few will get such offers from reputed companies. Almost 90% will get offer letters but due to less pay, many will opt for doing a master's degree. Also, there won't is any placement classes which is a drawback.
+Internships Opportunities : In our college, to complete the degree, going for on-the-job training i.e. internship is a must. We must go through 2 on job training. One in first-year summer vacation and another in second-year vacation. Those on-the-job training has to be done by the students outside the campus on their own and should get internship certificates.
+	
+</aside>
+<p>Avinashilingam Institute for Home Science and Higher Education for Women, popularly known as Avinshiligam University is a woman deemed to be University in Coimbatore. With a 91-92% placement rate, the university has recently placed 821 women students in companies like Ernst & Young, Cognizant, Maveric, TNQ, Ford, Wipro, Dell, Reliance Communications, Canara Bank, Bosch, CSS, iGATE, Renault Nissan, 2adpro, ugam, Standard Chartered, etc.Placement Experience : At our university, there is a good placement cell. Students are also getting job offers from HCL, WIPRO, etc, But only a few will get such offers from reputed companies. Almost 90% will get offer letters but due to less pay, many will opt for doing a master's degree. Also, there won't is any placement classes which is a drawback.
+Internships Opportunities : In our college, to complete the degree, going for on-the-job training i.e. internship is a must. We must go through 2 on job training. One in first-year summer vacation and another in second-year vacation. Those on-the-job training has to be done by the students outside the campus on their own and should get internship certificates.</p>
+
+
+<h3>Available colleges in Coimbatore</h3>
+	<ul>
+		<li>Psg</li>
+		<li>Kumaraguru</li>
+		<li>Avinashilingam
+			<ol>
+			<li>BE</li>
+			<li>B.Sc</li>
+			<li>Bcom</li>
+			<li>BA</li>
+			</ol>
+		</li>
+		<li>Karpagam</li>
+	</ul>
+
+<h3>Available departments in BE</h3>
+	<Ul>
+		<li>BE</li>
+		<li>B.Sc</li>
+		<li>Bcom</li>
+		<li>BA</li>
+	<Ul>
+
+<h3>Available departments in BE</h3>
+<span>THIS IS A SPAN TAG NEXT TO H3 TAG</span>
+<p>THIS IS PARA TAG NEXT TO SPAN TAG</p>
+<span>THIS IS A SPAN TAG NEXT TO H3 TAG</span>
+<p>THIS IS PARA TAG NEXT TO SPAN TAG</p>
+<span>THIS IS A SPAN TAG NEXT TO H3 TAG</span>
+<p>THIS IS PARA TAG NEXT TO SPAN TAG</p>
+<span>THIS IS A SPAN TAG NEXT TO H3 TAG</span>
+</body>
+</html>
